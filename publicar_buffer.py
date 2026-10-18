@@ -1,4 +1,4 @@
-"""Agenda no Buffer os 3 posts de um dia (07h, 12h, 21h, horário de Brasília).
+"""Agenda no Buffer os 3 posts de um dia (06h, 11h30, 19h, horário de Brasília).
 
 Uso: python3 publicar_buffer.py 19/10 [--teste]
      python3 publicar_buffer.py amanha     (dia seguinte no horário de Brasília)
@@ -12,7 +12,7 @@ import json, os, sys, datetime, urllib.request, openpyxl
 
 API = "https://api.buffer.com"
 PLANILHA = os.environ.get("PLANILHA", "/mnt/project-files/plano/lancamento-fe/videos-365/legendas-365.xlsx")
-SLOTS = [("07:00", 2, 3), ("12:00", 4, 5), ("21:00", 6, 7)]  # hora, col. arquivo, col. legenda
+SLOTS = [("06:00", 2, 3), ("11:30", 4, 5), ("19:00", 6, 7)]  # hora, col. arquivo, col. legenda
 BRT = datetime.timezone(datetime.timedelta(hours=-3))
 
 
