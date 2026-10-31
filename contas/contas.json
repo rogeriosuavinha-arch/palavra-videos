@@ -1,0 +1,11 @@
+{
+  "_leia": "Uma entrada por conta automatizada além da café. A café continua no publicar_buffer.py, sozinha na conta atual do Buffer. 'chave' é o NOME da variável de ambiente com a chave da API do Buffer daquela conta (nunca a chave em si). 'pasta' é a pasta do repo com os vídeos: <pasta>/<mm>/<dd-mm>.<slot>.mp4 e as legendas em <pasta>/legendas.json ({\"dd/mm\": {\"slot\": \"legenda\"}}).",
+  "contas": {
+    "tobias": {"chave": "BUFFER_API_KEY_TOBIAS", "pasta": "contas/tobias", "ia": false,
+               "horarios": {"1": "09:00", "2": "18:00"}, "ativa": false},
+    "julio": {"chave": "BUFFER_API_KEY_JULIO", "pasta": "contas/julio", "ia": true,
+              "horarios": {"1": "08:00", "2": "18:30"}, "ativa": false},
+    "marcella": {"chave": "BUFFER_API_KEY_MARCELLA", "pasta": "contas/marcella", "ia": true,
+                 "horarios": {"1": "10:00", "2": "20:00"}, "ativa": false}
+  }
+}
